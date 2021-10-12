@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon-sargentogato.png"
+      type="image/x-icon"
+    />
+    <!--------------------------------------------------CSS------------------------------------------------------>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      media="nope!"
+      onload="this.media='all'"
+    />
+    <!--Added instead the line above-->
+
+    <link rel="stylesheet" href="style/main.css" />
+
+    <!-------------------------------------------------Icons / fonts------------------------------------------------>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+      media="nope!"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+      media="nope!"
+      onload="this.media='all'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+      media="nope!"
+      onload="this.media='all'"
+    />
+    <script
+      src="https://kit.fontawesome.com/05c1d06020.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-------------------------------------------------Scripts---------------------------------------------------->
+
+    <title>Marlon Velasquez</title>
+  </head>
+
+  <body>
+    <div class="main-box">
+      <header>
+        <div class="header__overlay">
+          <div class="logo">DreamTravels</div>
+          <div class="header__overlay-box">
+            <h1 class="title">
+              Que el dinero no te impida realizar tus sueños
+            </h1>
+            <h3 class="subtitle">La manera de viajar que nunca imaginaste</h3>
+            <a class="openModal" href="#openModal">
+              <button class="btn"><span>Hazlo Realidad</span></button></a
+            >
+          </div>
+        </div>
+        <div id="openModal" class="modalBackground">
+          <div class="modalBox">
+            <div class="modalTitleClose">
+              <!-- <h2 class="modalTitle">Title Modal</h2> -->
+              <a href="#close" title="close" class="close">X</a>
+            </div>
+
+            <div class="modalBoxText">
+              <form
+                id="survey-form"
+                action=""
+                name="Survey-Form"
+                class="survey-form"
+              >
+                <div class="form-group">
+                  <label for="name" id="name-label" class="survey-form__label"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Nombre"
+                    class="survey-form__input"
+                  />
+                  <p class="error" id="nameError"></p>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" id="email-label" class="survey-form__label"
+                    >Correo</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Correo"
+                    class="survey-form__input"
+                  />
+                  <p class="error" id="emailError"></p>
+                </div>
+
+                <div class="form-group">
+                  <label for="province" id="province" class="survey-form__label"
+                    >Provincia</label
+                  >
+                  <select id="province" class="survey-form__input">
+                    <option value=""></option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Girona">Girona</option>
+                    <option value="Tarragona">Tarragona</option>
+                    <option value="Lleida">Lleida</option>
+                  </select>
+                  <p class="error" id="provinceError"></p>
+                </div>
+
+                <div class="form-group"></div>
+                <button class="submit-button">
+                  Submit
+                </button>
+              </form>
+            </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
